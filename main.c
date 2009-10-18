@@ -67,6 +67,7 @@ void wiegandData(uint8_t mask)
 void wiegandSend(uint32_t val)
 {
     char i;
+    // TODO pariti calculation needed
     wiegandData(WDATA0);
     for(i=0; i<24; i++)
     {
